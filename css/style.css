@@ -1,0 +1,35 @@
+/* Layout */
+
+#header {
+    border: 2px solid blue;
+    width: 956px;
+    float:left;
+}
+
+#navigation {
+    border: 2px solid blue;
+    width: 200px;
+    float:left;
+}
+
+#content {
+    background-color: white;
+    border: 2px solid blue;
+    width:730px;
+    float:left;
+}
+    
+#container {
+    background: #CCC;
+    overflow:auto;
+    max-width: 960px;
+    margin:0 auto;
+}
+
+#footer {
+    border: 2px solid blue;
+    width: 956px;
+    float:left;
+}
+
+/* Typografi */

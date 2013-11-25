@@ -3,57 +3,78 @@
 <head>
     <meta charset="utf-8"/>
     <title>Linnéuniversitetet - Lnu.se</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    
 </head>
 <body>
-<ul>
-                    <li> <a href= "../index.html">Start</a>
-                    <li> <a href= "laborationer.html">Laborationer</a>
-                    <li> <a href= "presentation.html">Presentation</a>
-                </ul>
-<h1>Kontakt</h1>
-    <h2>Kontaktuppgifter</h2>
-                <dl>
-                    <dt></dt>
-                        <dd> Kristina Rydälv Kåreby</dd>
-                        <dd> Tallvägen 3</dd>
-                        <dd> 237 31 Bjärred 3</dd>
-                </dl>
-                
-    <h2>Formulär</h2>
-    <p> Observera! Detta är bara ett påhittat kontaktformulär!  </p>
-    
-    <form method= "POST" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" >
-        <fieldset>
-        <legend>Fråga</legend>
-        
-        Ärendetyp <select>
-                    <option value="Fråga">Fråga</option>
-                    <option value="Support">Support</option>
-                    <option value="Akut hjälp">Akut hjälp</option>
-                    <option value="Mer information">Mer information</option>
-                    </select>  <br/>
 
+
+    <div id="container">
+        <div id="header">
+                <h1>Kristinas sajt</h1>
+                <p> Kontakt</p>
+            </div>
         
+        <div id="navigation">
+                <ul>
+                            <li> <a href= "../index.html">Start</a>
+                            <li> <a href= "laborationer.html">Laborationer</a>
+                            <li> <a href= "presentation.html">Presentation</a>
+                </ul> 
+            </div>
         
-        Rubrik: <input type="text" name="Rubrik" id="Rubrik" value="Vad göra?" /> <br/>
+        <div id="content">
+                <h2>Kontaktuppgifter</h2>
+                        <dl>
+                            <dt></dt>
+                                <dd> Kristina Rydälv Kåreby</dd>
+                                <dd> Tallvägen 3</dd>
+                                <dd> 237 31 Bjärred 3</dd>
+                        </dl>
+                        
+            <h2>Formulär</h2>
+            <p> Observera! Detta är bara ett påhittat kontaktformulär!  </p>
+            
+            <form method= "POST" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" >
+                <fieldset>
+                <legend>Fråga</legend>
+                
+                Ärendetyp <select>
+                            <option value="Fråga">Fråga</option>
+                            <option value="Support">Support</option>
+                            <option value="Akut hjälp">Akut hjälp</option>
+                            <option value="Mer information">Mer information</option>
+                            </select>  <br/>
         
-        <label for="comments">Fråga:</label> <textarea name="comments" id="comments" cols="25" rows="3" ></textarea>
-    </fieldset>
-     <fieldset>
-     <legend>Information om dig</legend>
-    
-      <label for="Kontakta_mig_via_mail">Kontakta mig via mail</label>  <input type="checkbox" name="mail" id="Kontakta_mig_via_mail" value="Kontakta mig via mail"> <br/>
-      
-      <label for="Kontakta_mig_via_telefon">Kontakta mig via telefon</label> <input type="checkbox" name="telefon" id="Kontakta_mig_via_telefon" value="Kontakta mig via telefon"> <br/>
-      
-      </fieldset> 
-      <input type="submit" value="Skicka frågan" />
-   
+                
+                
+                Rubrik: <input type="text" name="Rubrik" id="Rubrik" value="Vad göra?" /> <br/>
+                
+                <label for="comments">Fråga:</label> <textarea name="comments" id="comments" cols="25" rows="3" ></textarea>
+            </fieldset>
+             <fieldset>
+             <legend>Information om dig</legend>
+            
+              <label for="Kontakta_mig_via_mail">Kontakta mig via mail</label>  <input type="checkbox" name="mail" id="Kontakta_mig_via_mail" value="Kontakta mig via mail"> <br/>
+              
+              <label for="Kontakta_mig_via_telefon">Kontakta mig via telefon</label> <input type="checkbox" name="telefon" id="Kontakta_mig_via_telefon" value="Kontakta mig via telefon"> <br/>
+              
+              </fieldset> 
+              <input type="submit" value="Skicka frågan" />
+           
+                
+               
+            </form>
+                        
+                        
+        </div>
+            
+        <div id="footer">
+        <p>copy: Kristina Rydälv Kåreby 2013</p>
+        </div> 
+    </div>
         
        
-    </form>
-                
-                
-
+        
 </body>
 </html>
