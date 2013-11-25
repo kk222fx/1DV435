@@ -35,6 +35,27 @@ h2 {color: #161b1f;}
     padding:10px;
 }
 
+ul {
+    border: 1px solid black;
+    border-bottom: none;
+    width: 200 px;
+    margin: 0; padding: 0;
+}
+li {
+    list-style-type: none;
+    border-bottom: 1px solid black;
+}
+li a {
+    display: block;
+    padding: 10px;
+    background-color: "9C9"
+    color: #EFE;}
+
+li a:hover{
+    color: #FFFFFF;
+    background-color: #b08c91; ...}
+}
+
 #content {
     background-color: #e9f2f1;
 
