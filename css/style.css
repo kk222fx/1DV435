@@ -8,21 +8,51 @@ Text color: #14191e
 Accent: #b08c91
 */
 
-
+img.right {float:right; }
 body {color: #14191e;}
 
-h1 {color: #161b1f;}
-h1.sidrubrik {color: #f4fdfc; float:left;}
+h1 {color: #161b1f;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 1.5em; }
+    
+h1.sidrubrik { color: #FFFFFF; float:left; }
 .breakright {float: none;}
 .floatright {float: right;}
-h2 {color: #161b1f;}
+
+h2 {color: #161b1f;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    }
+    
+h3 {color: #161b1f;
+    font-family: "Georgia", "Arial", sans-serif;
+    font-size: 0,3em;
+    font-style: italic;}
+    
+p {color: #161b1f;
+font-family: "Georgia", "Arial", sans-serif;
+font-size: 11px;
+} 
+
+.copytext {color: #FFFFFF; float:left; }
+.blogspot {color:red, Arial, sans-serif;
+font-size: 10 px;}
+
+li {color: #63625e;
+font-family: "Georgia", "Arial", sans-serif;
+font-size: 11px;
+} 
+
+.formlist {color:#8599aa, Arial, sans-serif;
+font-size: 8 px;}
 
 #header {
     background-color: #a1b6d0;
-    width: 956px;
+    width: 920px;
     float:left;
-    border:3px;
-    margin:3px;
+    border:10px;
+    margin:10px;
     padding:10px;
 }
 
@@ -30,8 +60,8 @@ h2 {color: #161b1f;}
     background-color: #65778d;
     width: 200px;
     float:left;
-    border:3px;
-    margin:3px;
+    border-left:10px;
+    margin:10px;
     padding:10px;
 }
 
@@ -53,15 +83,20 @@ li a {
 
 li a:hover{
     color: #FFFFFF;
-    background-color: #b08c91; ...}
-}
+    background-color: #b08c91;}
+    
+li a:active{
+    display: block;
+    color: #FFFFFF;
+    background-color: red;}
+
 
 #content {
-    background-color: #e9f2f1;
+    background-color: #FFFFFF;
 
-    width:730px;
+    width:680px;
     float:left;
-    border:3px;
+    border:10px;
     margin:10px;
     padding:10px;
 }
@@ -75,10 +110,10 @@ li a:hover{
 
 #footer {
     background-color: #b08c91;
-    width: 956px;
+    width: 920px;
     float:left;
-    border:3px;
-    margin:3px;
+    border:10px;
+    margin:10px;
     padding:10px;
 }
 
