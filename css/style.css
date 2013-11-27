@@ -15,11 +15,15 @@ h1 {color: #161b1f;
     font-family: "Helvetica", "Arial", sans-serif;
     font-size: 1.5em; }
     
-h1.sidrubrik { color: #FFFFFF; float:left; }
+h1.sidrubrik { color: #FFFFFF; 
+float:left; 
+font-family: "Helvetica", "Arial", sans-serif;
+font-size: 2em;}
+
 .breakright {float: none;}
 .floatright {float: right;}
 
-h2 {color: #161b1f;
+h2 {color: #7a0026;
     font-family: "Helvetica", "Arial", sans-serif;
     font-weight: bold;
     font-size: 1em;
@@ -32,20 +36,44 @@ h3 {color: #161b1f;
     
 p {color: #161b1f;
 font-family: "Georgia", "Arial", sans-serif;
-font-size: 11px;
+font-size: 10px;
 } 
 
 .copytext {color: #FFFFFF; float:left; }
 .blogspot {color:red, Arial, sans-serif;
 font-size: 10 px;}
 
-li {color: #63625e;
+td {color: #63625e;
 font-family: "Georgia", "Arial", sans-serif;
-font-size: 11px;
+font-size: 10px;
+} 
+th {color: #63625e;
+font-family: "Georgia", "Arial", sans-serif;
+font-size: 12px;
+font-weight: bold;
 } 
 
-.formlist {color:#8599aa, Arial, sans-serif;
+dt {color: #63625e;
+font-family: "Verdana", "Arial", sans-serif;
+font-size: 10px;
+font-weight: bold;
+} 
+
+dd {color: #581328;
+font-family: "Verdana", "Arial", sans-serif;
+font-size: 10px;
+}
+
+li {color: #4e021a;
+font-family: "Verdana", "Arial", sans-serif;
+font-size: 10px;
+font-weight: bold;
+} 
+
+.snyggtable {color:#8599aa, Arial, sans-serif;
 font-size: 8 px;}
+
+
 
 #header {
     background-color: #a1b6d0;
