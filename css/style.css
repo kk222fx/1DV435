@@ -15,8 +15,7 @@ h1 {color: #161b1f;
     font-family: "Helvetica", "Arial", sans-serif;
     font-size: 1.5em; }
     
-h1.sidrubrik { color: #FFFFFF; 
-float:left; 
+h1.sidrubrik { color: #FFFFFF;
 font-family: "Helvetica", "Arial", sans-serif;
 font-size: 2em;}
 
@@ -39,7 +38,7 @@ font-family: "Georgia", "Arial", sans-serif;
 font-size: 10px;
 } 
 
-.copytext {color: #FFFFFF; float:left; }
+.copytext {color: #FFFFFF;}
 .blogspot {color:red, Arial, sans-serif;
 font-size: 10 px;}
 
@@ -118,6 +117,11 @@ li a:active{
     color: #FFFFFF;
     background-color: red;}
 
+.active {
+    display: block;
+    color: #FFFFFF;
+    background-color: red;}
+
 
 #content {
     background-color: #FFFFFF;
@@ -144,5 +148,13 @@ li a:active{
     margin:10px;
     padding:10px;
 }
-
+/* Blogpost*/
+.blogpost h3{
+    background-color: green;
+    background-color: white;
+    background-image: url('pics/kristina_logo_small.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-left: 35px;
+}
 /* Typografi */
