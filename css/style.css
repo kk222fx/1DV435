@@ -102,17 +102,17 @@ li {
     list-style-type: none;
     border-bottom: 1px solid black;
 }
-li a {
+#navigation li a {
     display: block;
     padding: 10px;
     background-color: #6f8bad;
     color: #EFE;}
 
-li a:hover{
+#navigation li a:hover{
     color: #FFFFFF;
     background-color: #b08c91;}
     
-li a:active{
+#navigation li a:active{
     display: block;
     color: #FFFFFF;
     background-color: #81b0eb;}
@@ -142,7 +142,7 @@ li a:active{
 
 #footer {
     background-color: #b08c91;
-    width: 920px;
+    width: 900px;
     float:left;
     border:10px;
     margin:10px;
