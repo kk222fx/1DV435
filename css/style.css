@@ -120,7 +120,7 @@ li {
 .active {
     display: block;
     color: #FFFFFF;
-    background-color: #81b0eb;}
+    background-color: red;}
 
 
 #content {
