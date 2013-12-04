@@ -1,6 +1,6 @@
 /* Layout */
 
-@media print{
+
 
     #header {
                 display: none;
@@ -17,7 +17,6 @@
     #content a: after {
         content: ' ("attr (href)")';
     }
-}
 
 /*
 Background main: #e9f2f1
