@@ -1,23 +1,23 @@
 /* Layout */
 
-@media print
+@media print{
 
-#header {
-            display: none;
+    #header {
+                display: none;
+    }
+    
+    #navigation {
+                display: none;
+    }
+    
+    #footer {
+                display: none;
+    }
+    
+    #content a: after {
+        content: ' ("attr (href)")';
+    }
 }
-
-#navigation {
-            display: none;
-}
-
-#footer {
-            display: none;
-}
-
-#content a: after {
-    content: " ("attr (href)")";
-}
-
 
 /*
 Background main: #e9f2f1
