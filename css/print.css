@@ -57,16 +57,16 @@ font-family: "Georgia", "Arial", sans-serif;
 font-size: 10px;
 } 
 
-.copytext {color: #FFFFFF;}
+.copytext {color: #000000;}
 .blogspot {color:red, Arial, sans-serif;
 font-size: 9px;
 font-weight: bold;}
 
-td {color: #FFFFFF;
+td {color: #000000;
 font-family: "Georgia", "Arial", sans-serif;
 font-size: 10px;
 } 
-th {color: #FFFFFF;
+th {color: #000000;
 font-family: "Georgia", "Arial", sans-serif;
 font-size: 14px;
 font-weight: bold;
@@ -90,9 +90,9 @@ font-weight: bold;
 } 
 
 .snyggtable tr, .snyggtable td {
-color:FFFFFF;
+color:000000;
 font-family: Arial, sans-serif;
-font-size: 8px;
+font-size: 9px;
 background-color: #6f8bad;
 border-width: 1px;
 }
