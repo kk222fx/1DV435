@@ -14,8 +14,9 @@
                 display: none;
     }
     
-    #content a: after {
-        content: ' ("attr (href)")';
+    #content a[href]:after {
+
+   content: ' ('attr(href)')';
     }
 
 /*
@@ -65,11 +66,14 @@ font-weight: bold;}
 td {color: #000000;
 font-family: "Georgia", "Arial", sans-serif;
 font-size: 10px;
-} 
+border: 1px solid black;
+}
+
 th {color: #000000;
 font-family: "Georgia", "Arial", sans-serif;
 font-size: 14px;
 font-weight: bold;
+border: 1px solid black;
 } 
 
 dt {color: #63625e;
@@ -87,7 +91,9 @@ li {color: #4e021a;
 font-family: "Verdana", "Arial", sans-serif;
 font-size: 10px;
 font-weight: bold;
-} 
+}
+
+
 
 .snyggtable tr, .snyggtable td {
 color:000000;
@@ -95,10 +101,14 @@ font-family: Arial, sans-serif;
 font-size: 9px;
 background-color: #6f8bad;
 border-width: 1px;
+border: 1px solid black;
 }
 
 tbody:nth-child(2n) {
     background-color: #CECECE;
+    border-width: 1px;
+    border-color: #000000;
+    
 }
 
 #header {
