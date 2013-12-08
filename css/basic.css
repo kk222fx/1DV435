@@ -130,6 +130,30 @@ li {
     color: #FFFFFF;
     background-color: #3c9fec;}
 
+#index a:hover{
+    background: url(pics/'img_sprite.png') 0 -24px;}
+
+#contact a:hover{background: url(../pics/'img_sprite_hover.png') -48px -72px;}
+#laborationer a:hover{background: url(../pics/'img_sprite_hover.png') -96px -122px;}
+#presentation a:hover{background: url(../pics/'img_sprite_hover.png') -146px -170px;}
+
+
+#navigation{position:relative;}
+#navigation li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+#navigation li, #navigation a{height:24px;display:block;}
+
+#index{left:0px;width:24;}
+#index{background:url('img_sprite.png') 0 0;}
+
+#contact{left:48px;width:48px;}
+#contact{background:url('img_sprite.png') -48px 0;}
+
+#laborationer{left:129px;width:43px;}
+#laborationer{background:url('img_sprite.png') -91px 0;}
+#laborationer{left:129px;width:43px;}
+#laborationer{background:url('img_sprite.png') -91px 0;}
+
+
 
 #content {
     background-color: #FFFFFF;
