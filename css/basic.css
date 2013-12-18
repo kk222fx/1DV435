@@ -78,6 +78,10 @@ background-color: #6f8bad;
 border-width: 1px;
 }
 
+.snyggtable-hide {
+    display:none;
+}
+
 tbody:nth-child(2n) {
     background-color: #CECECE;
 }
