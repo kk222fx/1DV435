@@ -58,12 +58,11 @@ function test4(tal) {
     
     // Jag har säkerställt att parametern tal blir av datatypen Number. Jag returnerar sedan det avrundade resultatet genomn att använda funktionen Math.round.
 	
-Number tal1 = (Number)tal;
-return Math.round(tal1);
 
 
-	
-	
+var Rounded = Math.round(tal);
+return Rounded;
+
 }
 
 
@@ -128,7 +127,7 @@ function test8(words) {
 	// Jag får en inkommande sträng på två ord. Jag skapar variablen second_word och använder funktionen indexOf för att hitta mellanslaget. Jag använder funktionen substring för att dela meningen. Hakparantesen används för att välja det andra ordet. Jag returnerar sedan det andra ordet.
 	
 	
-	var second_word = words.substr(words.indexOf(" "))[1];
+	var second_word = words.substr(words.indexOf(" ")+1);
 	return second_word;
 }
 
@@ -141,10 +140,11 @@ function test9(number) {
     
     //Jag skapar variabeln result av typen boolean. If-satsen testar om talet är större eller lika med 100 och sätter då variablen result till true. därefter returneras variablen result.
     
-	Boolean result = false;
+	var result;
+    result = false;
 	if(number >=100)
 	{
-	    result = true;
+	result = true;
 	}
 	return result;
 }
@@ -181,12 +181,16 @@ function test10(epost, namn) {
 //(se länktips i handledningen)
 function test11(arr) {
 	
-	// Jag skapar variabeln i, där funktionen Math.round gör att arrayens längd delas i två delar och avrundas till närmsta heltal.
-	//det mitterta värdet returneras sedan.
+	// Först tar jag reda på längden på hur många index arrayen innehåller - längd.
+	// Sen delar jag längden på två . 
+	//Jag lägger in att mittentalet ska avrundas till ett jämnt tal genomn Math.round, och returnerar det mitterta värdet.
 	
 	
-	var i = Math.round((arr.length/2));
-	return arr[i];
+	
+        var length=arr.length;
+        var middleNotRounded=length/2;
+        var middle=Math.round(middleNotRounded)-1;
+        return arr[middle];
 }
  
 
@@ -200,19 +204,17 @@ function test11(arr) {
 // Använd en for-loop för att lösa problemet
 function test12(arr) {
     
-   // Jag får in en array. Jag använder en for-loop för att gå igenom alla talen i arrayen.
-   // Jag adderar varje tal i arrayen till variabeln sum och returnerar den, avrundat till heltal m.h.a. Math.round, delat med antalet tal i arrayen.
-    
-    
-	var sum = 0;
-	for(var i = 0 ; i < arr.length ; i++)
-	{
-	    sum = sum + arr[i];
-	}
-	var result = Math.round(sum/arr.length);
-	return result;
-	
-	}
+    // Jag skapar variablen antal och sätter lika med längden. Jag sätter variablen total = 0 för att inte ha unidentified. 
+    //Jag skriver sedan in for-loopen med ++ för att loopen ska sluta när antalet tar slut (därför är i mindre än antal). 
+    //Jag delar totalen (värdet) med antalet och returnerar medelvärdet.
+        var antal=arr.length;
+        var total=0;
+        for (var i=0;i<antal;i++){
+         total=total+arr[i];
+        }
+    var medel=total/antal;
+    return medel;
+}
 
 
 

@@ -1,0 +1,34 @@
+<script type="text/javascript">
+var b = 0;
+var url;
+
+function changeSrc() {
+
+var images = new Array();
+images[0] = "http://ubuntu-se.org/phpBB3/download/file.php?avatar=8465_1220519925.jpg";
+images[1] = "http://ubuntu-se.org/phpBB3/download/file.php?avatar=11255_1229171490.jpeg";
+images[2] = "http://www.monika.nu/bilder/horoskop/tecken_drake.gif";
+
+if (b==1){
+url = images[0];
+document.getElementById("myImage").src=url;
+b=2;
+} else
+if (b==2){
+url = images[1];
+document.getElementById("myImage").src=url;
+b=0;
+}
+else
+if (b==0){
+url = images[2];
+document.getElementById("myImage").src=url;
+b=1;
+}
+window.setTimeout("changeSrc()", 1000);
+}
+</script>
+
+<body onload="changeSrc()">
+<img id="myImage" src="http://ubuntu-se.org/phpBB3/download/file.php?avatar=8465_1220519925.jpg" />
+</body>
