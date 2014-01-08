@@ -10,36 +10,50 @@
 
 
 <script type="text/javascript">
-var b = 0;
-var url;
 
-function changeSrc() {
+    /* Jag skapar två varialber. En variabel b (bild) och en till en url.*/
+    var b = 0;
+    var url;
 
-var images = new Array();
-images[0] = "http://stuff.kmade.se/2011/09/Din-sko_hela.jpg";
-images[1] = "http://stuff.kmade.se/2011/09/Karwick_hela1.jpg";
-images[2] = "http://stuff.kmade.se/2013/03/Naturbussen_hela1.jpg";
+    /* Jag lägger in en funktion som växlar bild (source). */
+    function changeSrc() {
 
-if (b==1){
-url = images[0];
-document.getElementById("myImage").src=url;
-b=2;
-} else
-if (b==2){
-url = images[1];
-document.getElementById("myImage").src=url;
-b=0;
-}
-else
-if (b==0){
-url = images[2];
-document.getElementById("myImage").src=url;
-b=1;
-}
-window.setTimeout("changeSrc()", 1000);
-}
+    /* Jag lägger in variablen bild och en array. Jag anger sökvägen till de tre olika bilderna*/
+    var images = new Array();
+        images[0] = "http://stuff.kmade.se/2011/09/Din-sko_hela.jpg";
+        images[1] = "http://stuff.kmade.se/2011/09/Karwick_hela1.jpg";
+        images[2] = "http://stuff.kmade.se/2013/03/Naturbussen_hela1.jpg";
+
+    /* Här anger jag vilken bild man växlar till. Jag lägger in en funktion som hämtar html-elementet 
+    //som jag vill lägga in url-en på.*/
+    if (b==1){
+        url = images[0];
+        document.getElementById("myImage").src=url;
+        b=2;
+        } else
+        
+    /* Här anger jag vilken bild man växlar till. Jag lägger in en funktion som hämtar elementet.*/
+    if (b==2){
+        url = images[1];
+        document.getElementById("myImage").src=url;
+        b=0;
+        }
+        
+    /* Om b inte är 2 så kollar jag om b=0, isåfall blir det image nr 2.*/
+    else
+        if (b==0){
+        url = images[2];
+        document.getElementById("myImage").src=url;
+        b=1;
+        }
+        
+    /* Här sätter jag webbrowsern till att kalla på funktionen, 3 sek (millisekunder)framåt i tiden.*/
+    /* Nedan (hör till "body onload) Här anger jag vilken bild som ska ligga när man går in i bildväxlaren. */
+    window.setTimeout("changeSrc()", 3000);
+        }
 </script>
 
+
 <body onload="changeSrc()">
-<img id="myImage" src="http://stuff.kmade.se/2011/09/Din-sko_hela.jpg" />
+    <img id="myImage" src="http://stuff.kmade.se/2011/09/Din-sko_hela.jpg" />
 </body>
